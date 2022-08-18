@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*🔽🔽🔽🔽🔽🔽🔽🔽🔽HEADER🔽🔽🔽🔽🔽🔽🔽🔽🔽*/
+
+
+/*🔽🔽NAV🔽🔽*/
+
+nav{
+    background: #212529;
+    height: 80px;
+    width: 100%;
+    z-index: 9999!important;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+    z-index: 9999!important;
+}
+.logo{
+    height: 40px;
+    z-index: 9999!important;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    z-index: 9999!important;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    z-index: 9999!important;
+}
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    z-index: 9999!important;
+}
+
+li a.active, li a:hover{
+    background: orange;
+    transition: .10s;
+    z-index: 9999!important;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    z-index: 9999!important;
+}
+
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #212529;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+/*🔼🔼NAV🔼🔼*/
+.banerr{
+    border-radius: 0;
+}
+
+/*🔼🔼🔼🔼🔼🔼🔼🔼HEADER🔼🔼🔼🔼🔼🔼🔼*/
+
+
+/*🔽🔽🔽🔽🔽🔽🔽🔽🔽MAIN🔽🔽🔽🔽🔽🔽🔽🔽🔽*/
+
+.column{
+    padding:1rem;
+    width:100%;
+    float:left;
+}
+.destacado{
+    background-color: yellow;
+}
+.ofertas{
+    background-color: yellow;
+}
+.gaming{
+    background-color: yellow;
+}
+.proximo{
+    background-color: yellow;
+
+}
+h2{
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 576px){
+    .column{
+        width: 50%;
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .column{
+        width: 25%;  
+    }
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    }
+    .container{
+        position:relative;
+       
+    }
+    img{
+        width: 100%;
+        display: block;
+        border-radius: 20px 20px 0 0;
+    }
+    h1{
+        text-align: center;
+    }
+    .container:after{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        border-radius: 20px 20px 0 0;
+        opacity: 0.7;
+        
+    }
+    .details{
+        padding: 20px 10px;
+        
+    }
+    .details>h3{
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+        margin: 10px 0 15px 0; 
+        
+    }
+    .details>p{
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+    }
+    
+    button{
+        background-color: #0d6efd;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        padding: 10px;
+        width: 100%;
+        font-weight: 800;
+        text-transform: uppercase;
+        cursor: pointer;
+       
+    }
+    .row{
+        justify-content: center;
+    }
+    
+/*🔼🔼🔼🔼🔼🔼🔼🔼MAIN🔼🔼🔼🔼🔼🔼🔼*/
+
+    
+
+/*🔽🔽🔽🔽🔽🔽🔽🔽🔽FOOTER🔽🔽🔽🔽🔽🔽🔽🔽🔽*/
+    .footer{
+        background-color: #212529;
+        padding:1.2rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+        text-align: center;
+    }
+    .footer p{
+        color: white;
+    }
+    .redes{
+        display: flex;
+    }
+    
+    
+    
+    /*🔼🔼🔼🔼🔼🔼🔼🔼FOOTER🔼🔼🔼🔼🔼🔼🔼*/
+   
+   
